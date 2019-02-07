@@ -1,14 +1,15 @@
 public class Animal{
 
   public static int animalId;
-  private String name;
-  private int age;
+  protected String name;
+  protected int age;
 
   public Animal(String name, int age){
     this.name = name;
     this.age = age;
     this.animalId++;
   }
+
 
   public String getName(){
     return this.name;
