@@ -3,6 +3,7 @@ public class Animal{
   public static int animalId;
   protected String name;
   protected int age;
+  protected String friendName;
 
   public Animal(String name, int age){
     this.name = name;
@@ -10,6 +11,13 @@ public class Animal{
     this.animalId++;
   }
 
+  public String getFriend(){
+    return this.friendName;
+  }
+
+  public void setFriend(Animal animal){
+    this.friendName = animal.name;
+  }
 
   public String getName(){
     return this.name;
