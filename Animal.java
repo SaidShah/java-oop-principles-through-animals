@@ -4,11 +4,19 @@ public class Animal{
   protected String name;
   protected int age;
   protected String friendName;
+  protected String favSnack;
   public static Animal[] animals = new Animal[10];
 
   public Animal(String name, int age){
     this.name = name;
     this.age = age;
+    this.animals[this.animalCount++] = this;
+  }
+
+  public Animal(String name, int age, String favSnack){
+    this.name = name;
+    this.age = age;
+    this.favSnack = favSnack;
     this.animals[this.animalCount++] = this;
   }
 
@@ -30,6 +38,14 @@ public class Animal{
 
   public int getAge(){
     return this.age;
+  }
+
+  public void setFavSnack(String favSnack){
+    this.favSnack = favSnack;
+  }
+
+  public String getFavSnack(){
+    return this.favSnack;
   }
 
   public void setAge(int age){
