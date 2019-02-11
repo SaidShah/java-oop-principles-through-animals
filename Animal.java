@@ -1,14 +1,15 @@
 public class Animal{
 
-  public static int animalId;
+  public static int animalCount=0;
   protected String name;
   protected int age;
   protected String friendName;
+  public static Animal[] animals = new Animal[10];
 
   public Animal(String name, int age){
     this.name = name;
     this.age = age;
-    this.animalId++;
+    this.animals[this.animalCount++] = this;
   }
 
   public String getFriend(){

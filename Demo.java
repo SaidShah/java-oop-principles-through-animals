@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 public class Demo{
 
 public static void main(String[] args) {
@@ -11,10 +11,13 @@ public static void main(String[] args) {
  dog.setFriend(cat);
  System.out.println(cat.getFriend());
  System.out.println(dog.getFriend());
- System.out.println(animal1.toString());
- System.out.println(cat.toString());
- System.out.println(dog.toString());
- System.out.println(Animal.animalId);
+
+ for(int i = 0; i<10; i++){
+   if(Animal.animals[i] != null){
+      System.out.println(Animal.animals[i].toString());
+
+   }
+ }
 }
 
 }
